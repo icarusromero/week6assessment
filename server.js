@@ -18,7 +18,7 @@ app.get('/js', (req, res) => {
 
 app.get('/api/robots', (req, res) => {
     try {
-        res.status(200).send(bots)
+        res.status(200).send(botsArr)
     } catch (error) {
         console.log('ERROR GETTING BOTS', error)
         res.sendStatus(400)
